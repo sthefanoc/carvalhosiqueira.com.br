@@ -1,8 +1,10 @@
 // import './src/styles/global.css';
 require ('./src/styles/global.css');
 // require ('./node_modules/bootstrap/dist/css/bootstrap.css');
+require ('./src/styles/components.css');
+require ('./src/styles/responsee.css');
 require ('./src/styles/style.css');
-require ('./src/styles/styleSwitcher.css');
+require ('./src/styles/template-style.css');
 // require('./static/js/script.js');
 // require('./static/js/styleSwitcher.js');
 // require ('./src/styles/skins/blue.css');

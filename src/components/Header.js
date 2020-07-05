@@ -1,85 +1,69 @@
 import React from "react";
-import {Link} from 'gatsby';
+import {Link, withPrefix} from 'gatsby';
+import whiteLogo from '../../static/images/logo_carvalhosiqueira_branco.png';
+import redLogo from '../../static/images/logo_carvalhosiqueira_vermelho.png';
 
 class Header extends React.Component {
+  componentDidMount(){
 
-  componentDidMount() {
-    console.log("There is a Header component on this page.");
-    // Testing if the page is working
-    const logoTest = document.querySelector(".logo");
-    if(logoTest){
-        logoTest.addEventListener("mouseenter",() => {
-            console.log('Header component!');
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset < 80){
+        document.querySelector('nav').classList.remove('fixed')
+      } else {
+        document.querySelector('nav').classList.add('fixed')
+      }
     })
-    };
+    // body = document.getElementsByTagName('body')[0];
 
-    // Nav bar toggler button
-    const navTogglerBtn=document.querySelector(".nav-toggler");
-    const aside=document.querySelector(".aside");
-
-    if(navTogglerBtn){
-        navTogglerBtn.addEventListener("click",() => {
-            asideSectionTogglerBtn();
-    })
-    };
-
-    const asideSectionTogglerBtn = function (){
-        const sectionList=document.querySelectorAll(".section");
-        aside.classList.toggle("open");
-        navTogglerBtn.classList.toggle("open");
-        for(let i=0;i<sectionList.length;i++){
-            sectionList[i].classList.toggle("open");
-        }
-    };
-
-    // Highlighting current section
-    const highlightCurrentPage = async () => {
-      await new Promise((resolve)=>setTimeout(() => {
-          try {
-            let currentPage='';
-            if(window.location.pathname !== "/"){
-                currentPage = window.location.pathname.split("/")[1]
-            } else {
-                currentPage = "home";
-            };
-            const currentPageClass = currentPage + "-link";
-            document.getElementsByClassName(currentPageClass)[0].setAttribute("aria-current", "page");
-            
-          } catch {
-            document.getElementsByClassName('home-link')[0].setAttribute("aria-current", "page");
-          }
-          resolve();
-      }, 500)); 
-    };
-    highlightCurrentPage();
+    // function myFunction() {
+    //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //     // document.getElementById("myP").className = "test";
+    //     console.log('aaaaaaaaa')
+    //   } else {
+    //     // document.getElementById("myP").className = "";
+    //     console.log('bbbbbbbb')
+    //   }
+    // }
+    // body.addEventListener('scroll', myFunction);
   }
 
   render() {
 
   return (
-    <header>
-      <div className="aside">
-        {/* Logo */}
-        <div className="logo">
-          <a href="/" >SthefanoC</a>
+    <header role="banner" className="position-absolute">
+      {/* <!-- Top Navigation --> */}
+      <nav className="background-transparent background-transparent-hightlight full-width sticky">
+        <div className="s-12 l-3">
+          <a href="/" className="logo">
+            {/* <!-- Logo White Version --> */}
+            {/* <div className="logo-white">CARVALHO SIQUEIRA</div> */}
+            <img className="logo-white" src={whiteLogo} alt="" />
+            {/* <!-- Logo Dark Version --> */}
+            {/* <div className="logo-dark">CARVALHO SIQUEIRA</div> */}
+            <img className="logo-dark" src={redLogo} alt="" />
+          </a>
         </div>
-        {/* Nav Toggler Button */}
-        <div className="nav-toggler">
-          <span></span>
+        <div className="top-nav s-12 l-9">
+          <p className="nav-text"></p>
+          <ul className="right chevron">
+            <li><a href="products.html">Valores</a></li>
+            <li><a>Services</a>
+              <ul>
+                <li><a>Service 1</a>
+                  <ul>
+                    <li><a>Service 1 A</a></li>
+                    <li><a>Service 1 B</a></li>
+                  </ul>
+                </li>
+                <li><a>Service 2</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        {/* Nav */}
-        <div className="nav">
-          <Link as={Link} to="/" className="section-link home-link"><i className="fa fa-home"></i>Home</Link>
-          <Link as={Link} to="/about" className="section-link about-link"><i className="fa fa-user"></i>About</Link>
-          <Link as={Link} to="/services" className="section-link services-link"><i className="fa fa-list"></i>Services</Link>
-          <Link as={Link} to="/projects" className="section-link projects-link"><i className="fa fa-briefcase"></i>Portfolio</Link>
-          <Link as={Link} to="/blog" className="section-link blog-link"><i className="fa fa-envelope"></i>Blog</Link>
-          <Link as={Link} to="/contact" className="section-link contact-link"><i className="fa fa-comments"></i>Contact</Link>
-        </div>
-        <div className="copyright-text">
-          Powered by <a href="https://masteradin.com/">Masteradin</a>
-        </div>
-      </div>
+      </nav>
     </header>
 )}
 }

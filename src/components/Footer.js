@@ -5,152 +5,74 @@ import { render } from "react-dom";
 
 
 class Footer extends Component {    
-  componentDidMount() {
-    if(document){
-      this.switchColor = (color) => {
-        console.log('Switch color function!',color);
-        localStorage.setItem("selectedBodySkinColor", color);
-        
-        // document.location.reload();
   
-        const links = document.querySelectorAll('.alternate-style');
-  
-        for(let i=0;i<links.length;i++){
-          if(color === links[i].getAttribute('title')){
-              links[i].disabled=false;
-              console.log(links[i].title, 'not disabled');
-          } else {
-            links[i].disabled=true;
-            console.log(links[i].title, 'disabled');
-          }
-        }
-      };
-
-      this.updateBodySkinToLight = () => {
-        console.log('gonna change to light');
-        localStorage.setItem("selectedBodyTheme", 'light');
-        document.body.className="";
-        document.querySelector('input[value="light"]').checked="true";
-      };
-      this.updateBodySkinToDark = () => {
-        console.log('gonna change to dark');
-        localStorage.setItem("selectedBodyTheme", 'dark');
-        document.body.className="dark"
-        document.querySelector('input[value="dark"]').checked="true";
-      };
-      this.switchBodySkin = (bodyTheme) => {
-        console.log('switcher theme!', bodyTheme)
-        localStorage.setItem("selectedBodyTheme", bodyTheme)
-        // const bodySkin=document.querySelectorAll(".body-skin");
-        // const totalBodySkin=bodySkin.length;
-        // for(let j=0;j<totalBodySkin;j++){
-        if(bodyTheme === 'dark'){
-            console.log('gonna change to dark!');
-            document.body.className="dark"
-            document.querySelector('input[value="dark"]').checked="true";
-        } else {
-            console.log('gonna change to light!');
-            document.body.className="";
-            document.querySelector('input[value="light"]').checked="true";
-        }
-        // }
-      };
-    }  
-
-    console.log("There is a Footer component on this page.");
-    const isBodyDark = document.getElementsByTagName('body')[0].classList[0];
-    if(isBodyDark){
-      document.querySelector('input[value="dark"]').checked="true";
-    } else {
-      document.querySelector('input[value="light"]').checked="true";
-    };
-    
-    // Style Switcher Meachanism
-    
-    // const links = document.querySelectorAll('.alternate-style');
-    // const totalLinks=links.length;
-
-    // function setActiveStyle(color){
-    //     for(let i=0;i<totalLinks;i++){
-    //         if(color === links[i].getAttribute('title')){
-    //             links[i].removeAttribute("disabled");
-    //         } else {
-    //             links[i].setAttribute("disabled","true");
-    //         }
-    //     }
-    // }
-
-    // const colorBtns = document.querySelectorAll(".style-switcher li a");
-    // for(let i=0;i<colorBtns.length;i++){
-    //     colorBtns[i].addEventListener("click", () => {
-    //         setActiveStyle(colorBtns[i].title)
-    //     })    
-    // }
-
-    // skin selection
-    // const bodySkin=document.querySelectorAll(".body-skin");
-    // const totalBodySkin=bodySkin.length;
-    // const changeBodySkin = () =>{
-    //     for(let j=0;j<totalBodySkin;j++){
-    //         bodySkin[j].addEventListener("change", function(){
-    //             if(this.value === 'dark'){
-    //                 document.body.className="dark"
-    //             } else {
-    //                 document.body.className=""
-    //             }
-    //         })
-    //     }
-    // }
-    // changeBodySkin();
-
-    if(document.querySelector(".toggle-style-switcher")){
-        document.querySelector(".toggle-style-switcher").addEventListener("click", () => {
-            document.querySelector(".style-switcher").classList.toggle("open");
-        })
-    }
-  }
   render() {
     // const selectedBodyTheme = useState('light');
   return (
-    <div>
-        {/* <h1>{selectedBodyTheme}</h1> */}
-        <div className="style-switcher">
-          <div className="toggle-style-switcher">
-            <i className="fa fa-cog fa-spin"></i>
+    <footer>
+      {/* <!-- Contact Us --> */}
+      <div class="background-primary padding text-center">
+        <p class="h1">Contact Us: 0800 787 787</p>                                                                        
+      </div>
+      
+      {/* <!-- Main Footer --> */}
+      <section class="background-dark full-width">
+        {/* <!-- Map --> */}
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div class="s-12 grayscale center">  	  
+            something here    
           </div>
-          <h5>Style Switcher</h5>
-          <ul>
-            <li><a href="#" title="pink" style={{backgroundColor: "#ec1839"}} onClick={ () => this.switchColor('pink')} ></a></li>
-            <li><a href="#" title="blue" style={{backgroundColor: "#2196f3"}} onClick={ () => this.switchColor('blue')} ></a></li>
-            <li><a href="#" title="orange" style={{backgroundColor: "#fa5b0f"}} onClick={ () => this.switchColor('orange')} ></a></li>
-            <li><a href="#" title="yellow" style={{backgroundColor: "#ffb400"}} onClick={ () => this.switchColor('yellow')} ></a></li>
-            <li><a href="#" title="green" style={{backgroundColor: "#72b626"}} onClick={ () => this.switchColor('green')} ></a></li>
-          </ul>
-          <h5>Body Skin</h5>
-          <label >
-            <input 
-              type="radio" 
-              className="body-skin" 
-              name="body-style" 
-              value="light" 
-              defaultChecked="true" 
-              onClick={() => this.updateBodySkinToLight()} 
-              />
-             Light
-          </label>
-          <label >
-            <input 
-              type="radio" 
-              className="body-skin" 
-              name="body-style" 
-              value="dark" 
-              // defaultChecked="false" 
-              onClick={() => this.updateBodySkinToDark()} 
-              />
-             Dark
-          </label>
         </div>
-    </div>
+        
+        {/* <!-- Collumn 2 --> */}
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div class="padding-2x">
+            <div class="line">              
+              <div class="float-left">
+                  <i class="icon-sli-location-pin text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">Company Address</h3>
+                  <p>Responsive Street 7
+                     London / United Kingdom / Europe
+                  </p>               
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-envelope text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">E-mail</h3>
+                  <p>contact@sampledomain.com
+                     office@sampledomain.com
+                  </p>              
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-phone text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70">
+                  <h3 class="margin-bottom-0">Phone Numbers</h3>
+                  <p>0800 4521 800 50
+                     0450 5896 625 16
+                     0798 6546 465 15
+                  </p>             
+                </div>
+            </div>.
+          </div>
+        </div>  
+      </section>
+      <hr class="break margin-top-bottom-0" style={{borderColor: 'rgba(0, 38, 51, 0.80)'}} />
+      
+      {/* <!-- Bottom Footer --> */}
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
+          <p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p>
+        </div>
+        <div class="s-12 l-6">
+          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+        </div>
+      </section>
+    </footer>
    )
 }}
 

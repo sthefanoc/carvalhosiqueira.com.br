@@ -6,32 +6,7 @@ import { Component } from 'react';
 
 // const SEO = ({title, description, keywords, image}) => {
 class SEO extends Component{
-    constructor(props) {
-        super(props)
-        this.state = {
-          skinColor: 'blue', // or your default width here
-        }
-    }
-
-    componentDidMount (){
-        this.defineSkinColor();
-        setTimeout(this.defineSkinColor,100);
-    }
-
-    defineSkinColor = () => {
-        this.setState({ skinColor: window.localStorage.getItem("selectedBodySkinColor") || 'blue' });
-        const links = document.querySelectorAll('.alternate-style');
-  
-        for(let i=0;i<links.length;i++){
-          if(this.state.skinColor === links[i].getAttribute('title')){
-              links[i].disabled=false;
-            //   console.log(links[i].title, 'not disabled');
-          } else {
-            links[i].disabled=true;
-            //   console.log(links[i].title, 'disabled');
-          }
-        }
-    }
+    
 
     render(){
         const {title, description, keywords, image} = this.props;
@@ -72,55 +47,6 @@ class SEO extends Component{
                             name="robots" 
                             content="index,follow" />
                         <html lang="en" />
-                        {/* <Color /> */}
-
-                        {/* <link 
-                            rel="stylesheet" 
-                            className="alternate-style" 
-                            title={this.state.skinColor} 
-                            href={withPrefix(`styles/${this.state.skinColor}.css`)} 
-                            type="text/css" 
-                        /> */}
-                        <link 
-                            rel="stylesheet" 
-                            className="alternate-style" 
-                            title='pink' 
-                            href={withPrefix(`styles/pink.css`)} 
-                            type="text/css"
-                            disabled={(this.state.skinColor === 'pink') ? false : true } 
-                        />
-                        <link 
-                            rel="stylesheet" 
-                            className="alternate-style" 
-                            title='blue' 
-                            href={withPrefix(`styles/blue.css`)} 
-                            type="text/css" 
-                            disabled={(this.state.skinColor === 'blue') ? false : true } 
-                        />
-                        <link 
-                            rel="stylesheet" 
-                            className="alternate-style" 
-                            title='orange' 
-                            href={withPrefix(`styles/orange.css`)} 
-                            type="text/css" 
-                            disabled={(this.state.skinColor === 'orange') ? false : true } 
-                        />
-                        <link 
-                            rel="stylesheet" 
-                            className="alternate-style" 
-                            title='yellow' 
-                            href={withPrefix(`styles/yellow.css`)} 
-                            type="text/css" 
-                            disabled={(this.state.skinColor === 'yellow') ? false : true } 
-                        />
-                        <link 
-                            rel="stylesheet" 
-                            className="alternate-style" 
-                            title='green' 
-                            href={withPrefix(`styles/green.css`)} 
-                            type="text/css" 
-                            disabled={(this.state.skinColor === 'green') ? false : true } 
-                        />
                         
                     </Helmet>
                 )

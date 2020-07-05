@@ -132,8 +132,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Rubik`,
-            variants: [`700`],
+            family: `Comfortaa`,
+            variants: [`300`,`500`,`700`],
           },
           {
             family: `Roboto`,

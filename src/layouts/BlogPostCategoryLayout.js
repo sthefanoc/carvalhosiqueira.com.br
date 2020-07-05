@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 import innertext from 'innertext';
 import PrimaryLayout from '../layouts/PrimaryLayout';
 import Post from '../components/Post';
-import anotherBlogPostImage from '../../static/images/another-blog-post-sthefanoc.png';
+// import anotherBlogPostImage from '../../static/images/another-blog-post-sthefanoc.png';
 
 const BlogCategoryLayout = ({data}) => {
     console.log('this is the category page!')
@@ -36,8 +36,8 @@ const BlogCategoryLayout = ({data}) => {
                     />)
                     :
                     (<Post
-                    image={anotherBlogPostImage}
-                    alt="Another SthefanoC.com Blog Post"
+                    // image={anotherBlogPostImage}
+                    // alt="Another SthefanoC.com Blog Post"
                     title={node.title}
                     excerpt={node.excerpt}
                     date={node.date}
