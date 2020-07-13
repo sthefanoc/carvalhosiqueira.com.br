@@ -5,36 +5,11 @@
  */
 const path = require('path');
 
-// const siteMetadata = require('./config/metadata');
+const siteMetadata = require('./config/metadata');
 
 module.exports = {
   /* Your site config here */
-  siteMetadata: {
-    title: "SthefanoC | Dev & Growth",
-    description:"Sthefano Carvalho website. Product Developer and Growth. Focused on creating valuable solutions to society.",
-    keywords:"sthefano, sthefanoc, development, fullstack, growth, growth marketing, react, react developer",
-    image:"/static/sthefanoc.png",
-    url:'https://sthefanoc.com/',
-    author:'SthefanoC',
-    social: [
-        {
-            name: 'github',
-            url: 'https://github.com/sthefanoc'
-        },
-        {
-            name: 'linkedin',
-            url: 'https://www.linkedin.com/in/sthefanocarvalho/'
-        },
-        {
-            name: 'instagram',
-            url: 'https://www.instagram.com/sthefanocarvalho/'
-        },
-        {
-            name: 'youtube',
-            url: 'https://www.youtube.com/channel/UCgVtIe1_Uhw936xaRcrZGFg'
-        }
-    ]
-  },
+  siteMetadata,
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -132,12 +107,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Comfortaa`,
+            family: `Roboto`,
             variants: [`300`,`500`,`700`],
           },
           {
-            family: `Roboto`,
-            variants: [`300`,`400`,`500`, `700`]
+            family: `EB Garamond`,
+            variants: [`400`,`600`, `700`]
           },
         ],
       },

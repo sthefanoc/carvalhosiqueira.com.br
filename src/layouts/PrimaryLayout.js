@@ -8,10 +8,8 @@ const PrimaryLayout = (props) => {
         <div>
           <SEO />
           <Header></Header>
-          <main>
-            <div className={props.column}>
-                {props.children}
-            </div>
+          <main className={props.column}>
+            {props.children}
           </main>
           <Footer></Footer>
         </div>
