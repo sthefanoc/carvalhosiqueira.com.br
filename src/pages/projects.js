@@ -17,33 +17,33 @@ class Project extends Component {
 
 export default Project;
 
-export const query = graphql`
-{
-  allWordpressWpPortfolioItem{
-    nodes{
-      title
-      short_name
-      content
-      featured_media{
-          localFile{
-            childImageSharp{
-              fixed(width:800, height: 800){
-                src
-                width
-                height
-                originalName
-              }
-            }
-          }
-        }
-      programming_category
-      main_language
-      libraries_used
-      frameworks_used
-      blog_post
-      github_repo
-      live_project
-    }
-  }
-}
-`
+// export const query = graphql`
+// {
+//   allWordpressWpPortfolioItem{
+//     nodes{
+//       title
+//       short_name
+//       content
+//       featured_media{
+//           localFile{
+//             childImageSharp{
+//               fixed(width:800, height: 800){
+//                 src
+//                 width
+//                 height
+//                 originalName
+//               }
+//             }
+//           }
+//         }
+//       programming_category
+//       main_language
+//       libraries_used
+//       frameworks_used
+//       blog_post
+//       github_repo
+//       live_project
+//     }
+//   }
+// }
+// `

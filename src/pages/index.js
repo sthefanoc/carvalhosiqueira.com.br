@@ -92,11 +92,11 @@ export default function Home({data}) {
                 {/* <a href="#"><div className="cardBtn"><FontAwesomeIcon icon={faFacebook} /></div></a> */}                
               </div>
               <ul className="social-icons">
-                <li><a href="#"><FontAwesomeIcon className="cardBtn" icon={faFacebook} /></a></li>
-                <li><a href="#"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
-                <li><a href="#"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
-                <li><a href="#"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
-                <li><a href="#"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1300"><a href="#"><FontAwesomeIcon className="cardBtn" icon={faFacebook} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1200"><a href="#"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1100"><a href="#"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1000"><a href="#"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
+                <li data-aos="fade-up" data-aos-duration="1400"><a href="#"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li>
               </ul>
             </div>
             {/* Card end */}
