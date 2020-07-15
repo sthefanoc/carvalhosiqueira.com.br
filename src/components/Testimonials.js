@@ -9,7 +9,6 @@ import 'aos/dist/aos.css';
 import { Component } from "react";
 
 
-
 class Quote extends Component{
     constructor(props) {
         super(props);
@@ -74,6 +73,7 @@ class Quote extends Component{
                 playBtn.classList.add('active');
                 console.log('gonna play');
                 testimonials.classList.add('play');
+                isPlayOn()
             }
         }
 
@@ -132,8 +132,8 @@ class Quote extends Component{
         }
 
         
-        // const data = Object.values(quotes);
-        // const indexes = Object.keys(quotes);
+        const data = Object.values(quotes);
+        const indexes = Object.keys(quotes);
         return (
             <section className='testimonials play' >
                 <div className='testimonial-info'>
