@@ -1,15 +1,35 @@
+.testimonials-section {
+    width: 100%;
+    background-image: url('/images/header.png');
+    /* display: flex; */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .testimonials{
-    padding: 10% 0% 10% 0%;
+    /* padding: 12% 0% 12% 0%; */
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    /* align-content:stretch; */
     align-items: center;
-    height: 50vh;
+    height: 55vh;
+    /* min-height: 100%; */
     /* align-content: center; */
     margin: 40px auto;
     /* max-width: 700px; */
-    width: 100%;
-    background-image: url('/images/header.png');
+    
     /* background-size: 100% auto; */
+}
+.testimonials-section .testimonials-title{
+    color: #fff;
+    /* font-size: 150%; */
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 2%;
+    padding-top: 3%;
+    /* background-color: red; */
 }
 .testimonials .testimonial-info .inactive{
     display: none;
@@ -18,6 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 4 1 auto;
 }
 .testimonials p {
     text-align: center;
@@ -28,11 +49,11 @@
 }
 .testimonials .testimonials-quote{
     font-style: italic;
-    font-size: 2vw;
+    font-size: 20px;
 }
 .testimonials .testimonials-name{
     font-weight: 600;
-    font-size: 2.5vw;
+    font-size: 25px;
 }
 .testimonials img{
     /* padding-top: 10%; */
@@ -40,7 +61,7 @@
     border: solid #fff 5px;
     border-radius: 50%;
     height: auto;
-    max-width: 15%;
+    max-width: 200px;
     margin-bottom: 5%;
     transition: ease box-shadow 2s;
 }
@@ -48,10 +69,32 @@
     /* box-shadow: 5px 10px 18px #888888; */
     box-shadow: 5px 10px 20px #888888;
 }
-.testimonial-buttons{
+.testimonials-section .control-buttons{
+    flex: 1 1 auto;
+    width: 100%;
+    /* margin-bottom: 0; */
+    align-self: flex-end;
+    padding-bottom: 5%;
+    /* height: 20%; */
+    /* margin-right: 10%; */
+    /* position: absolute; */
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-self: right; */
+    /* align-items: left; */
+    /* position: absolute; */
+    color: #fff;
+    /* background-color: blue; */
+    
 }
-.testimonial-buttons span {
+.testimonials-section .control-buttons .testimonial-buttons{
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.testimonials-section .control-buttons .testimonial-buttons span {
     height: 30px;
     width: 30px;
     margin: 0 3px;
@@ -60,7 +103,7 @@
     justify-content: center;
     cursor: pointer;
 }
-.testimonial-buttons span::before {
+.testimonials-section .control-buttons .testimonial-buttons span::before {
     content: "";
     height: 30%;
     width: 30%;
@@ -69,37 +112,61 @@
     transition: background-color 0.3s ease;
 }
 
-.testimonial-buttons span:hover::before {
+.testimonials-section .control-buttons .testimonial-buttons span:hover::before {
     background-color: #fff;
 }
-.testimonial-buttons span.active::before {
+.testimonials-section .control-buttons .testimonial-buttons span.active::before {
     background-color: red;
 }
-.testimonial-buttons span[data-quote="active"]::before {
+.testimonials-section .control-buttons .testimonial-buttons span[data-quote="active"]::before {
     background-color: red;
 }
-.testimonials .control-btns{
-    /* margin-bottom: 0; */
-    align-self: flex-end;
-    margin-right: 10%;
-    /* align-items: left; */
+
+.testimonials-section .control-buttons .play-btns{
+    /* align-self: right; */
+    /* background-color: red; */
     /* position: absolute; */
-    color: #fff;
-    
+    font-size: 80%;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    bottom: 10%;
 }
-.testimonials .control-btns svg{
+.testimonials-section .control-buttons svg{
     margin-left: 10px;
     cursor: pointer;
     font-size: 120%;
     opacity: 50%;
     transition: box-shadow 1s;
 }
-.testimonials .control-btns svg:hover{
+.testimonials-section .control-buttons svg:hover{
     box-shadow: 5px 10px 18px #888888;
 }
-.testimonials .control-btns svg:hover{
+.testimonials-section .control-buttons svg:hover{
     opacity: 100%;
 }
-.testimonials .control-btns svg.active{
+.testimonials-section .control-buttons svg.active{
     color:red;
+}
+@media only screen and (max-width: 800px){
+    .testimonials{
+        padding: 12% 0% 12% 0%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .testimonials-section .testimonials-title{
+        font-size: 30px;
+    }
+    .testimonials{
+        height: 40vh;
+    }
+    .testimonials img{
+        max-width: 30%;
+    }
+    .testimonials .testimonials-quote{
+        font-size: 4vw;
+    }
+    .testimonials .testimonials-name{
+        font-size: 4vw;
+    }
 }

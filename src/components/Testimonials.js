@@ -80,7 +80,7 @@ class Quote extends Component{
         let i = 0;
         function isPlayOn () {
             console.log('isPlayOn rodando!')
-            let testimonials = document.querySelector('section.testimonials');
+            let testimonials = document.querySelector('section.testimonials-section');
             let testQuant = document.querySelectorAll('.testimonial-container');
             let playOn = Object.values(testimonials.classList).includes('play');
             // let playOn = true;
@@ -135,45 +135,51 @@ class Quote extends Component{
         const data = Object.values(quotes);
         const indexes = Object.keys(quotes);
         return (
-            <section className='testimonials play' >
-                <div className='testimonial-info'>
-                    {data.map(item=>{
-                        return(
-                            <div key={item.id} className={(this.state.selectedTestimonial === item.id) ? 'testimonial-container active' : 'testimonial-container inactive'}>
-                                <img src={item.image} alt={item.client + ' image'} data-aos="fade-up" data-aos-duration="1000"/>
-                                <p className='testimonials-quote' data-aos="fade-left" data-aos-duration="1200">{item.quote}</p>
-                                <p className='testimonials-name' data-aos="fade-up" data-aos-duration="1000">{item.client}</p>
-                                {/* <div style={{color:'white'}}>Selected {this.state.selectedTestimonial}</div>
-                                <div style={{color:'white'}}>Index {item.id}</div> */}
-                            </div>
-                        )
-                    })}
+            <section className='testimonials-section play' >
+                <div className="testimonials-title">
+                    Voz dos parceiros
                 </div>
-                
-                <div className='testimonial-buttons'>
-                    {indexes.map(index => (
-                    <span
-                        onClick={event => this.handleSetClick(event)}
-                        data-quote={index}
-                        key={index}
-                        className={index == 0 ? 'active' : ''}
-                    />
-                    ))}
+                <div className="testimonials play">
+                    <div className='testimonial-info'>
+                        {data.map(item=>{
+                            return(
+                                <div key={item.id} className={(this.state.selectedTestimonial === item.id) ? 'testimonial-container active' : 'testimonial-container inactive'}>
+                                    <img src={item.image} alt={item.client + ' image'} data-aos="fade-up" data-aos-duration="1000"/>
+                                    <p className='testimonials-quote' data-aos="fade-left" data-aos-duration="1200">{item.quote}</p>
+                                    <p className='testimonials-name' data-aos="fade-up" data-aos-duration="1000">{item.client}</p>
+                                    {/* <div style={{color:'white'}}>Selected {this.state.selectedTestimonial}</div>
+                                    <div style={{color:'white'}}>Index {item.id}</div> */}
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
-                <div className="control-btns">
-                    <FontAwesomeIcon 
-                        id="pauseBtn"
-                        className="controlBtn" 
-                        icon={faPause} 
-                        onClick={event => this.handlePlayClick(event)}
-                    /> 
-                    <FontAwesomeIcon 
-                        id="playBtn"
-                        className="controlBtn active" 
-                        icon={faPlay} 
-                        onClick={event => this.handlePlayClick(event)}
-                    /> 
-                </div>
+                <div className="control-buttons">
+                        <div className='testimonial-buttons'>
+                            {indexes.map(index => (
+                            <span
+                                onClick={event => this.handleSetClick(event)}
+                                data-quote={index}
+                                key={index}
+                                className={index == 0 ? 'active' : ''}
+                            />
+                            ))}
+                        </div>
+                        <div className="play-btns">
+                            <FontAwesomeIcon 
+                                id="pauseBtn"
+                                className="controlBtn" 
+                                icon={faPause} 
+                                onClick={event => this.handlePlayClick(event)}
+                            /> 
+                            <FontAwesomeIcon 
+                                id="playBtn"
+                                className="controlBtn active" 
+                                icon={faPlay} 
+                                onClick={event => this.handlePlayClick(event)}
+                            /> 
+                        </div>
+                    </div>
             </section>
             
         )
