@@ -60,7 +60,7 @@ class Quote extends Component{
         this.activatePlay = item => {
             let pauseBtn = document.querySelector('#pauseBtn');
             let playBtn = document.querySelector('#playBtn');
-            let testimonials = document.querySelector('.testimonials');
+            let testimonials = document.querySelector('section.testimonials-section');
             // let testimonialObjects = document.querySelector('section.testimonials');
             // let playOn = Object.values(testimonialObjects.classList).includes('play');
             if(item === 'pause'){
@@ -136,9 +136,10 @@ class Quote extends Component{
         const indexes = Object.keys(quotes);
         return (
             <section className='testimonials-section play' >
-                <div className="testimonials-title">
-                    Voz dos parceiros
-                </div>
+                <h2 className="testimonials-title">
+                    Voz dos parceiros. <br />
+                    <span>Como somos lembrados.</span>
+                </h2>
                 <div className="testimonials play">
                     <div className='testimonial-info'>
                         {data.map(item=>{

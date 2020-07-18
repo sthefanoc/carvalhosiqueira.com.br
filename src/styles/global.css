@@ -2,6 +2,12 @@
 .items{
     color: #841800;
 }
+/* Import font */
+@font-face {
+    font-family: myFirstFont;
+    src: url('/images/header.png');
+  }
+
 
 /* SHADES: */
 
@@ -72,28 +78,31 @@ html,body{
 /* Lading */
 
 .landing{
+    background-color: #841800;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw 0 10vw;
-    height: 100vh;
+    height: 80vh;
     overflow-y: hidden;
 }
 
 .landingText h1{
     font-size: 6vw;
     margin: 0 !important;
+    color: #FFF;
 }
 .landingText span{
-    color: #C84D33;
+    color: rgb(173, 169, 169);
     font-size: 4vw;
 }
 .landingText h3{
     margin: 6px !important;
     font-size: 20px;
-    opacity: 0.3;
+    opacity: 0.8;
     line-height: 30px;
+    color: #fff;
 }
 
 .landingText .btn{
@@ -101,13 +110,25 @@ html,body{
     margin-top: 30px;
     padding: 14px 20px 14px 20px;
     background-color: #25914E;
+    /* background-color: #006024; */
     border-radius: 45px;
     text-align: center;
+    border: solid 1px #fff;
+    border: none;
+    transition: all .2s ease-in-out;
+    opacity: 0.8;
 }
-
-.landingText .btn a{
-    font-size: 2vw;
-    color: #fff
+.landingText .btn:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    font-weight: 400;
+}
+.landingText a .btn{
+    /* text-transform:uppercase; */
+    /* font-family: 'Roboto'; */
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFF
 }
 
 .landingImage img{
@@ -117,7 +138,7 @@ html,body{
 /* About Section */
 
 .about {
-    height: 600px;
+    height: 60vh;
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -131,17 +152,19 @@ html,body{
 }
 .aboutText h2{
     position: relative;
-    font-size: 4vw;
+    font-size: 50px;
     left: 110px;
 }
 .aboutText span{
     color: #C84D33;
-    font-size: 3.5vw;
+    font-size: 35px;
 }
 .aboutText img{
-    width: 10vw;
+    width: auto;
+    height: 30vh;
     position: absolute;
-    top: 50px;
+    top: 160px;
+    right: 50px;
 }
 
 .aboutList{
@@ -172,20 +195,24 @@ html,body{
     position: absolute;
     line-height: 25px;
     font-weight: 600;
+    color: #107837;
 }
 
 /* Info section */
 .infoSection{
     height: auto;
 }
+
 .infoHeader{
     text-align: center;
     margin-bottom: 5%;
-    font-size: 2vw;
+}
+.infoHeader h2{
+    font-size: 50px;
 }
 .infoHeader span{
     color: #C84D33;
-    font-size: 2vw;
+    font-size: 35px;
 }
 .infoCards{
     display: flex;
@@ -314,7 +341,9 @@ html,body{
     
 }
 .social-icons li:hover .cardBtn{
-    background-color: pink;
+    opacity: 1.0;
+    transform: scale(1.2);
+
 }
 .cardBtn{
     /* position: absolute; */
@@ -325,7 +354,8 @@ html,body{
     background-color: #841700;
     /* background-color: red; */
     color: #fff;
-    font-size: 2.1vw;
+    font-size: 1.5vw;
+    opacity: 0.8;
     /* width: 25px;
     height: 20px; */
     border-radius: 50%;
@@ -348,32 +378,48 @@ html,body{
 
 /* Banner and footer */
 .banner{
-    height: 400px;
-    background-color: #ffce63;
-    background-color: #25914E;
+    height: auto;
+    /* background-color: #ffce63; */
     display: flex;
     flex-direction: row;
     padding: 50px;
     justify-content: space-evenly;
     align-items: center;
 }
-
 .bannerText h2{
-    font-size: 3vw;
+    font-size: 50px;
     color: #000;
     font-weight: 600;
 }
 .bannerText span{
-    font-size: 1.6vw;
-    font-weight: normal;
+    color: #C84D33;
+    font-size: 35px;
 }
+.bannerText p{
+    font-size: 20px;
+    margin-right: 10%;
+    text-align: initial;
+    padding: 0% 5% 0% 5%;
+    align-content: flex-start;
+    line-height: 30px;
+    opacity: 0.6;
+}
+
 .bannerText img{
     width: auto;
-    height: 8vh;
+    max-height: 8vh;
+
     margin-right: 20px;
 }
+
 .bannerImg img{
     width: 20vw;
+}
+.banner .banner-images{
+    padding-top: 2%;
+    display: flex;
+    /* margin-right: 10%; */
+    justify-content: flex-start;
 }
 
 /* Footer */
@@ -383,6 +429,7 @@ html,body{
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    background-color: #25914E;
 }
 
 .footerLinks a{
@@ -461,12 +508,16 @@ html,body{
     }
     .aboutText h2{
         left: 40px;
+        font-size: 7vw;
+    }
+    .aboutText span{
         font-size: 5vw;
     }
     .aboutText img{
-        width: 16vw;
+        width: 10vw;
+        height: auto;
         top: 10px;
-        left: -30px;
+        left: -20px;
     }
     .aboutList{
         width: 75%;
@@ -485,6 +536,12 @@ html,body{
         text-align: center;
         margin: 40px 0;
     }
+    .infoHeader h2{
+        font-size: 7vw;
+    }
+    .infoHeader span{
+        font-size: 5vw;
+    }
     .infoCards{
         /* display: flex;
         flex-direction: column;
@@ -497,6 +554,9 @@ html,body{
         margin-bottom: 15%;
         margin-top: 15%;
     }
+    .social-icons li .cardBtn{
+        font-size: 4vw;
+    }
     /* Banner */
     .banner{
         height: auto;
@@ -507,13 +567,24 @@ html,body{
         text-align: center;
     }
     .banner h2{
-        font-size: 6vw;
+        font-size: 7vw;
+    }
+    .banner span{
+        font-size: 5vw;
+    }
+    .bannerText p{
+        text-align: center;
+        font-size: 15px;
+        padding: 0% 0% 0% 0%;
     }
     .bannerInnerText{
-        font-size: 3vw !important;
+        /* font-size: 3vw !important; */
     }
     .bannerText img{
-        width: 26vw;
+        /* width: 26vw; */
+    }
+    .banner .banner-images{
+        justify-content: space-around;
     }
 
     /* Footer */

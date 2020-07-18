@@ -12,8 +12,18 @@ class Header extends React.Component {
   render() {
 
   return (
-    <header role="banner" className="position-absolute">
-      Down slow
+    <header>
+      <div className="nav post-scroll">
+        <div className="logo">
+          <h4>Carvalho Siqueira</h4>
+        </div>
+        <div className="links">
+          <a href="#" className="mainlink">Missão</a>
+          <a href="#">Nós</a>
+          <a href="#">Testemunhos</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
     </header>
 )}
 }

@@ -2,6 +2,7 @@ import React from "react";
 import PrimaryLayout from '../layouts/PrimaryLayout';
 
 import Testimonials from '../components/Testimonials';
+import Header from '../components/Header';
 import DottedBox from '../components/DottedBox';
 import { withPrefix } from "gatsby";
 import AOS from 'aos';
@@ -17,17 +18,8 @@ export default function Home({data}) {
   return (
     <PrimaryLayout>
       <div className="wrapper">
-        <div className="nav">
-          <div className="logo">
-            <h4>Carvalho Siqueira</h4>
-          </div>
-          <div className="links">
-            <a href="#" className="mainlink">Missão</a>
-            <a href="#">Nós</a>
-            <a href="#">Testemunhos</a>
-            <a href="#">Contato</a>
-          </div>
-        </div>
+        
+        <Header />
 
         {/* Landing Page */}
 
@@ -35,11 +27,11 @@ export default function Home({data}) {
           <div className="landingText" data-aos="fade-up" data-aos-duration="1000">
             <h1>Carvalho Siqueira <br /><span>advogadas e advogados</span></h1>
             <h3>Apoio jurídico estruturado a organizações, movimentos sociais e ativistas.</h3>
-            <div className="btn">
-              <a href="#">
-                Conheça
-              </a>
-            </div>
+            <a href="#escritorio">
+              <div className="btn">
+                  Conheça
+              </div>
+            </a>
           </div>
           <div className="landingImage" data-aos="fade-down" data-aos-duration="2000">
             <img src={withPrefix('/images/social-media.svg')} alt="background image"/>
@@ -50,7 +42,7 @@ export default function Home({data}) {
         <section className="about">
           <div className="aboutText" data-aos="fade-up" data-aos-duration="1000">
             <h2>Nossa Missão.<br /><span>Nossos Valores.</span></h2>
-            <img src={withPrefix('/images/signs.svg')} alt=""/>
+            <img src={withPrefix('/images/justice.png')} alt=""/>
           </div>  
           <div className="aboutList" data-aos="fade-left" data-aos-duration="1000">
             <ol>
@@ -77,7 +69,7 @@ export default function Home({data}) {
         {/* Info section */}
         <section className="infoSection">
           <div className="infoHeader" data-aos="fade-up" data-aos-duration="1000">
-            <h2>Quem somos, o que fazemos e <br /> <span>por que fazemos</span></h2>
+            <h2>Quem somos, o que fazemos.<br /> <span>E por que fazemos.</span></h2>
           </div>
           <div className="infoCards">
             {/* Card start */}
@@ -144,14 +136,16 @@ export default function Home({data}) {
         {/* <DottedBox /> */}
         
         {/* Banner */}
-        <section className="banner" data-aos="fade-right" data-aos-duration="1000">
+        <section className="banner" id="escritorio" data-aos="fade-right" data-aos-duration="1000">
           <div className="bannerText">
-            <h2>O Escritório <br /> <span className="bannerInnerText">Onde atuamos</span> </h2>
+            <h2>Nosso Escritório.<br /> <span className="bannerInnerText">Nossa atuação.</span> </h2>
             <p>Carvalho Siqueira Advogadas e Advogados surge com a proposta de consolidar a experiência de seus sócios, adquiridas a partir da atuação com organizações da sociedade civil, para oferecer apoio jurídico estruturado a organizações, movimentos sociais e ativistas. <br /><br />
             Nosso foco é o integral atendimento da necessidade dos clientes em projetos e campanhas que envolvam incidência estratégica em políticas públicas, análise de riscos, proteção legal e litígio estratégico no sistema de justiça brasileiro e sistemas internacionais de proteção dos direitos humanos (OEA e ONU).
             </p>
-            <a href="#"><img src={withPrefix('/images/oas.gif')} alt=""/></a>
-            <a href="#"><img src={withPrefix('/images/onu.png')} alt=""/></a>
+            <div className="banner-images">
+              <a href="#"><img src={withPrefix('/images/oea.gif')} alt=""/></a>
+              <a href="#"><img src={withPrefix('/images/onu.png')} alt=""/></a>  
+            </div>
           </div>
           <div className="bannerImg" data-aos="fade-up" data-aos-duration="1000">
             <img src={withPrefix('/images/hands.webp')} alt=""/>

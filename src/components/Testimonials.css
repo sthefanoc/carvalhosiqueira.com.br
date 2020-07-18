@@ -25,11 +25,21 @@
 .testimonials-section .testimonials-title{
     color: #fff;
     /* font-size: 150%; */
-    font-size: 40px;
-    font-weight: 600;
+    /* font-size: 4vw; */
+    /* font-weight: 600; */
     padding-bottom: 2%;
-    padding-top: 3%;
+    padding-top: 2%;
     /* background-color: red; */
+    font-size:35px;
+}
+.testimonials-section .testimonials-title h2{
+    /* color: red; */
+}
+.testimonials-section .testimonials-title span{
+    color: #fff;
+    color: red;
+    opacity: 0.7;
+    font-size: 25px;
 }
 .testimonials .testimonial-info .inactive{
     display: none;
@@ -155,7 +165,17 @@
 }
 @media only screen and (max-width: 600px){
     .testimonials-section .testimonials-title{
-        font-size: 30px;
+        /* font-size: 30px; */
+        padding-bottom: 0;
+        text-align: center;
+        font-size: 7vw;
+    }
+    .testimonials-section .testimonials-title h2{
+        /* color: red; */
+        
+    }
+    .testimonials-section .testimonials-title span{
+        font-size: 5vw;
     }
     .testimonials{
         height: 40vh;
