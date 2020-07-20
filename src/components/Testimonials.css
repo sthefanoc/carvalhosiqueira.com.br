@@ -1,6 +1,6 @@
 .testimonials-section {
     width: 100%;
-    background-image: url('/images/header.png');
+    background-image: url('../../images/header.png');
     /* display: flex; */
     flex-direction: column;
     display: flex;
