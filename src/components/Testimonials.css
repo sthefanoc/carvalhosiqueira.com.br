@@ -196,4 +196,7 @@
     .testimonials .testimonials-name{
         font-size: 4vw;
     }
+    .testimonials-section .control-buttons{
+        padding-bottom: 10%;
+    }
 }
