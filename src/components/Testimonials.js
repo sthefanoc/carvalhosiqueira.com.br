@@ -135,7 +135,8 @@ class Quote extends Component{
         const data = Object.values(quotes);
         const indexes = Object.keys(quotes);
         return (
-            <section className='testimonials-section play' id="testemunhos">
+            <section className='testimonials-section play' id="testemunhos" style={{backgroundImage: "url('/images/header.png')"}}>
+                {/* <img src={withPrefix('/images/header.webp')} alt="justice background" className="background"/> */}
                 <h2 className="testimonials-title" data-aos="fade-up" data-aos-duration="1200">
                     Voz dos parceiros. <br />
                     <span data-aos="fade-up" data-aos-duration="1600">Como somos lembrados.</span>

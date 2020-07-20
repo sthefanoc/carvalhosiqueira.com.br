@@ -61,13 +61,11 @@ const query =graphql`
 {
     site{
       siteMetadata{
-        siteMetadata {
-          title
-          description
-          keywords
-          image
-          siteUrl
-        }
+        title
+        description
+        keywords
+        image
+        siteUrl
       }
     }
   }

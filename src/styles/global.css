@@ -22,10 +22,10 @@
 }
 
 /* Import font */
-@font-face {
+/* @font-face {
     font-family: logoFont;
     src: url('/styles/logo-font.otf');
-  }
+  } */
 
 html,body{
     background-color: #fff;
@@ -86,7 +86,7 @@ header .post-scroll.active{
     height: auto;
 }
 .nav .logo{
-    font-family: logoFont;
+    /* font-family: logoFont; */
     color: #000;
     opacity: 0.7;
 }

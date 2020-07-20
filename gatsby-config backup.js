@@ -9,7 +9,14 @@ const siteMetadata = require('./config/metadata');
 
 module.exports = {
   /* Your site config here */
-  siteMetadata,
+  pathPrefix: "/carvalhosiqueira.com.br",
+  siteMetadata:{
+    title: "CarvalhoSiqueira | Advogadas & Advogados",
+    description:"Advogadas e advogados. Apoio jurídico estruturado a organizações, movimentos sociais e ativistas.",
+    keywords:"carvalho, siqueira, carvalhosiqueira, flavio siqueira, sheila de carvalho, advogados, advogadas e advogados, escritorio advocacia",
+    image:"/static/logo_carvalhosiqueira_vermelho.webp",
+    siteUrl:'https://carvalhosiqueira.com.br/',
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -155,7 +162,7 @@ module.exports = {
         background_color: `#841800`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/logo_carvalhosiqueira_vermelho.webp`,
+        icon: `src/images/carvalhosiqueira-icon.webp`,
       },
     },
     {
