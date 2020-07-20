@@ -22,6 +22,8 @@
     justify-content: center;
 }
 .footer .contact-us .contact-number{
+    display: flex;
+    flex-wrap: nowrap;
     color:  #fff;
     /* color: red; */
     font-weight: 600;

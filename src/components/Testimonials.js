@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import { Component } from "react";
 
 
+
 class Quote extends Component{
     constructor(props) {
         super(props);
@@ -135,7 +136,8 @@ class Quote extends Component{
         const data = Object.values(quotes);
         const indexes = Object.keys(quotes);
         return (
-            <section className='testimonials-section play' id="testemunhos" style={{backgroundImage: "url('/images/header.png')"}}>
+            // <section className='testimonials-section play' id="testemunhos" style={{backgroundImage: "url('/images/header.png')"}}>
+            <section className='testimonials-section play' id="testemunhos">
                 {/* <img src={withPrefix('/images/header.webp')} alt="justice background" className="background"/> */}
                 <h2 className="testimonials-title" data-aos="fade-up" data-aos-duration="1200">
                     Voz dos parceiros. <br />
