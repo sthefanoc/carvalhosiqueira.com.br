@@ -14,7 +14,7 @@ module.exports = {
     title: "CarvalhoSiqueira | Advogadas & Advogados",
     description:"Advogadas e advogados. Apoio jurídico estruturado a organizações, movimentos sociais e ativistas.",
     keywords:"carvalho, siqueira, carvalhosiqueira, flavio siqueira, sheila de carvalho, advogados, advogadas e advogados, escritorio advocacia",
-    image:"/static/logo_carvalhosiqueira_vermelho.webp",
+    image:"/static/images/carvalhosiqueira-icon.webp",
     siteUrl:'https://carvalhosiqueira.com.br/',
   },
   plugins: [
@@ -58,6 +58,7 @@ module.exports = {
         useMozJpeg: false,
         stripMetadata: true,
         defaultQuality: 75,
+        icon: 'src/images/black-fist.png'
       },
     },
     {

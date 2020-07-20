@@ -334,13 +334,14 @@ header .post-scroll.active{
     box-shadow: 0 10px 22px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.09);
 }
 .infoCards .one .cardOneImg{
-    width: 180px;
     position: absolute;
     top:-40px;
     right: -20px;
     border-radius: 50%;
-    height: 18vh;
+    height: 13vw;
+    
     width: auto;
+    /* max-width: 25%; */
     z-index: 10;
     border: solid 4px #000;
     box-shadow: 0 10px 22px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.09);
@@ -519,6 +520,26 @@ header .post-scroll.active{
 
 
 /* RESPONSIVENESS */
+@media only screen and (max-width: 1100px){
+    .aboutText h2{
+        /* position: relative; */
+        font-size: 4vw;
+        left: 3vw;
+    }
+    .aboutText span{
+        font-size: 3vw;
+    }
+    .aboutText img{
+        width: auto;
+        height: 30vh;
+        position: absolute;
+        top: 160px;
+        right: 50px;
+    }
+    .infoCards .one .cardOneImg{
+        height: 14vh;
+    }
+}
 
 @media only screen and (max-width: 600px){
     /* NAV BAR */
@@ -654,6 +675,7 @@ header .post-scroll.active{
         margin-top: 15%;
     }
     .infoCards .one .cardOneImg{
+        height: 19vh;
         top:-25px;
     }
     .social-icons li .cardBtn{

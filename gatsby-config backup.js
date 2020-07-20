@@ -95,6 +95,7 @@ module.exports = {
         useMozJpeg: false,
         stripMetadata: true,
         defaultQuality: 75,
+        icon: 'src/images/black-fist.png'
       },
     },
     {

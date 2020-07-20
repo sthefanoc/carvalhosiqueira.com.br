@@ -90,7 +90,7 @@
     width: 100%;
     /* margin-bottom: 0; */
     align-self: flex-end;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     /* height: 20%; */
     /* margin-right: 10%; */
     /* position: absolute; */
@@ -166,7 +166,8 @@
 }
 @media only screen and (max-width: 800px){
     .testimonials{
-        padding: 12% 0% 12% 0%;
+        /* padding: 12% 0% 12% 0%; */
+        padding: 0 0% 0 0%;
     }
 }
 @media only screen and (max-width: 600px){
