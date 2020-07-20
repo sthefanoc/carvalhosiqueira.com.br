@@ -1,27 +1,9 @@
 module.exports = {
     siteMetadata:{
-        title: "SthefanoC | Dev & Growth",
-        description:"Sthefano Carvalho website. Product Developer and Growth. Focused on creating valuable solutions to society.",
-        keywords:"sthefano, sthefanoc, development, fullstack, growth, growth marketing, react, react developer",
-        image:"/static/sthefanoc.png",
-        siteUrl:'http://sthefanoc.com/',
-        social: [
-            {
-                name: 'github',
-                url: 'https://github.com/sthefanoc'
-            },
-            {
-                name: 'linkedin',
-                url: 'https://www.linkedin.com/in/sthefanocarvalho/'
-            },
-            {
-                name: 'instagram',
-                url: 'https://www.instagram.com/sthefanocarvalho/'
-            },
-            {
-                name: 'youtube',
-                url: 'https://www.youtube.com/channel/UCgVtIe1_Uhw936xaRcrZGFg'
-            }
-        ]
+        title: "CarvalhoSiqueira | Advogadas & Advogados",
+        description:"Advogadas e advogados. Apoio jurídico estruturado a organizações, movimentos sociais e ativistas.",
+        keywords:"carvalho, siqueira, carvalhosiqueira, flavio siqueira, sheila de carvalho, advogados, advogadas e advogados, escritorio advocacia",
+        image:"/static/logo_carvalhosiqueira_vermelho.webp",
+        siteUrl:'https://carvalhosiqueira.com.br/',
     }
 }

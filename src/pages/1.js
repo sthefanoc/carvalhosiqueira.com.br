@@ -31,8 +31,8 @@ export default class Home extends Component {
             <a href="#escritorio" className="btn">Conheça</a>
           </div>
           <div className="landingImage" data-aos="fade-up" data-aos-duration="2000">
-          <img src={withPrefix('/images/black-fist.png')} alt="landing page"/>
-            {/* <img src={withPrefix('/images/white-fist.png')} alt="background image"/> */}
+          {/* <img src={withPrefix('/images/black-fist.png')} alt="background image"/> */}
+            <img src={withPrefix('/images/white-fist.png')} style={{opacity: 1}} alt="background"/>
             {/* <img src={withPrefix('/images/signs.svg')} alt="background image"/> */}
           </div>
         </section>
@@ -134,6 +134,6 @@ export default class Home extends Component {
         </section>
       </div>
     </PrimaryLayout>
-  )
+    )
   }
 }

@@ -5,8 +5,19 @@ import redLogo from '../../static/images/logo_carvalhosiqueira_vermelho.png';
 
 class Header extends React.Component {
   componentDidMount(){
-
-   
+    let preScroll = document.querySelector('.pre-scroll');
+    let postScroll = document.querySelector('.post-scroll');
+    document.addEventListener('scroll', function() {
+      if(window.pageYOffset > 150){
+        preScroll.classList.remove('active');
+        postScroll.classList.add('active');
+      } else {
+        preScroll.classList.add('active');
+        postScroll.classList.remove('active');
+      }
+      // console.log(window.pageYOffset + 'px');
+    });
+    preScroll.classList.add('active');
   }
 
   render() {
@@ -15,13 +26,25 @@ class Header extends React.Component {
     <header>
       <div className="nav post-scroll">
         <div className="logo">
-          <h4>Carvalho Siqueira</h4>
+          {/* <h4><span>| </span>CARVALHO SIQUEIRA</h4> */}
+          <a href="#landing"><img src={withPrefix('/images/logo-white.png')} alt=""/></a>
         </div>
         <div className="links">
-          <a href="#" className="mainlink">Missão</a>
-          <a href="#">Nós</a>
-          <a href="#">Testemunhos</a>
-          <a href="#">Contato</a>
+          <a href="#missao">Missão</a>
+          <a href="#sobre-nos">Nós</a>
+          <a href="#testemunhos">Testemunhos</a>
+          <a href="#contato" className="mainlink">Contato</a>
+        </div>
+      </div>
+      <div className="nav pre-scroll">
+        {/* <div className="logo">
+          <h4><span>| </span>CARVALHO SIQUEIRA</h4>
+        </div> */}
+        <div className="links">
+          <a href="#missao">Missão</a>
+          <a href="#sobre-nos">Nós</a>
+          <a href="#testemunhos">Testemunhos</a>
+          <a href="#contato" className="mainlink">Contato</a>
         </div>
       </div>
     </header>

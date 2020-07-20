@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { css, cx } from "emotion"; 
+import React from "react"; 
 import { withPrefix } from 'gatsby';
-import testimonialsStyles from './Testimonials.css';
+// import testimonialsStyles from './Testimonials.css';
+import './Testimonials.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
@@ -19,6 +19,7 @@ class Quote extends Component{
     }
     
     componentDidMount(){
+        AOS.init();
         this.handleSetClick = event => {
             let activeItem = event.currentTarget.getAttribute("data-quote");
             activateQuote(activeItem);
@@ -92,14 +93,13 @@ class Quote extends Component{
                 } else {
                     i++;
                 }
-                setTimeout(isPlayOn, 3000); // callback
+                setTimeout(isPlayOn, 5000); // callback
             }
         }
         setInterval(isPlayOn(), 5000);
     }  
     
     render(){
-        AOS.init();
         const quotes = {
             0: {
             id: 0,
@@ -135,10 +135,10 @@ class Quote extends Component{
         const data = Object.values(quotes);
         const indexes = Object.keys(quotes);
         return (
-            <section className='testimonials-section play' >
-                <h2 className="testimonials-title">
+            <section className='testimonials-section play' id="testemunhos">
+                <h2 className="testimonials-title" data-aos="fade-up" data-aos-duration="1200">
                     Voz dos parceiros. <br />
-                    <span>Como somos lembrados.</span>
+                    <span data-aos="fade-up" data-aos-duration="1600">Como somos lembrados.</span>
                 </h2>
                 <div className="testimonials play">
                     <div className='testimonial-info'>

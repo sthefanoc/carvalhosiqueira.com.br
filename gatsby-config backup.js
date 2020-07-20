@@ -9,7 +9,6 @@ const siteMetadata = require('./config/metadata');
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/carvalhosiqueira.com.br",
   siteMetadata,
   plugins: [
     {
@@ -37,6 +36,43 @@ module.exports = {
         // sampleRate: 5,
         // siteSpeedSampleRate: 10,
         // cookieDomain: "example.com",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "UA-169694089-1",
+  
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: true,
+  
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+  
+        // Specify optional GTM environment details.
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+  
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+      },
+    },
+    {
+      resolve: 'gatsby-wpgraphql-inline-images',
+      options: {
+        wordPressUrl: `http://wordpress.sthefanoc.com/`,
+        uploadsUrl: `http://wordpress.sthefanoc.com/wp-content/uploads/`,
+        processPostTypes: ["Page", "Post"],
+        graphqlTypeName: 'WPGraphQL',
       },
     },
     `gatsby-plugin-netlify`,
@@ -99,6 +135,15 @@ module.exports = {
     },
     {
       resolve: `gatsby-transformer-remark`,
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `wordpress.sthefanoc.com`,
+        protocol: `http`,
+        hostingWPCOM: false,
+        useACF: true,
+      },
     },
     `gatsby-plugin-react-helmet`,
     {

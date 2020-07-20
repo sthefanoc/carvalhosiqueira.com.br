@@ -1,6 +1,6 @@
 import React from "react";
 import PrimaryLayout from '../layouts/PrimaryLayout';
-import { withPrefix } from "gatsby";
+// import { withPrefix } from "gatsby";
 import { Component } from "react";
 
 class Project extends Component {

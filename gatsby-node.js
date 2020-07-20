@@ -13,42 +13,42 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     }
   }
   
-exports.createPages = ({graphql, actions}) => {
-const { createPage } = actions;
-return graphql(`
-{
-    allWordpressPost {
-      nodes {
-        slug
-      }
-    }
-    allWordpressCategory {
-      nodes {
-        slug
-      }
-    }
-  }      
-`).then(result => {
-        result.data.allWordpressPost.nodes.forEach((node) => {
-            createPage({
-                path: 'blog/' + node.slug,
-                component: path.resolve('./src/layouts/BlogPostLayout.js'),
-                context: {
-                    slug: node.slug
-                }
-            })
-        })
-        result.data.allWordpressCategory.nodes.forEach((node) => {
-            createPage({
-                path: 'blog/' + node.slug,
-                component: path.resolve('./src/layouts/BlogPostCategoryLayout.js'),
-                context: {
-                    slug: node.slug
-                }
-            })
-        })
-    })
-};
+// exports.createPages = ({graphql, actions}) => {
+// const { createPage } = actions;
+// return graphql(`
+// {
+//     allWordpressPost {
+//       nodes {
+//         slug
+//       }
+//     }
+//     allWordpressCategory {
+//       nodes {
+//         slug
+//       }
+//     }
+//   }      
+// `).then(result => {
+//         result.data.allWordpressPost.nodes.forEach((node) => {
+//             createPage({
+//                 path: 'blog/' + node.slug,
+//                 component: path.resolve('./src/layouts/BlogPostLayout.js'),
+//                 context: {
+//                     slug: node.slug
+//                 }
+//             })
+//         })
+//         result.data.allWordpressCategory.nodes.forEach((node) => {
+//             createPage({
+//                 path: 'blog/' + node.slug,
+//                 component: path.resolve('./src/layouts/BlogPostCategoryLayout.js'),
+//                 context: {
+//                     slug: node.slug
+//                 }
+//             })
+//         })
+//     })
+// };
 
 // exports.createPages = ({graphql, actions}) => {
 //     const { createPage } = actions;

@@ -2,13 +2,6 @@
 .items{
     color: #841800;
 }
-/* Import font */
-@font-face {
-    font-family: myFirstFont;
-    src: url('/images/header.png');
-  }
-
-
 /* SHADES: */
 
 .items{
@@ -28,6 +21,12 @@
     color: #00270F;
 }
 
+/* Import font */
+@font-face {
+    font-family: logoFont;
+    src: url('/styles/logo-font.otf');
+  }
+
 html,body{
     background-color: #fff;
     font-family: 'EB Garamond';
@@ -38,6 +37,17 @@ html,body{
 
 *{
     text-decoration: none !important;
+}
+
+header .pre-scroll,
+header .post-scroll{
+    /* background-color: pink; */
+    display: none;
+}
+header .pre-scroll.active,
+header .post-scroll.active{
+    /* background-color: pink; */
+    display: flex;
 }
 
 .nav{
@@ -57,16 +67,72 @@ html,body{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+.nav.pre-scroll{
+    background-color: #841800;
+    box-shadow: 0 0 0;
+    justify-content: space-between;
+}
+.nav.pre-scroll .links a{
+    color: #fff;
+}
+.nav.pre-scroll .links a:last-child{
+    margin-left: auto;
+}
+.nav .post-scroll{
+    background-color: #fff;
+}
+.nav .logo img{
+    width: 40%;
+    height: auto;
+}
+.nav .logo{
+    font-family: logoFont;
+    color: #000;
+    opacity: 0.7;
+}
+.nav .logo span{
+    font-family: 'EB Garamond';
+    font-size: 4vh;
+    font-weight: 300;
+}
 .nav .links a{
     margin-right: 25px;
     font-size: 16px;
     font-weight: 600;
     color: #000;
 }
-
-.nav .links .mainlink{
+.nav.pre-scroll .links{
+    /* background-color: blue; */
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.nav .links a{
+    opacity: 0.7;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+.nav .links a:hover{
+    /* color: #25914E; */
+    opacity: 1;
+    transform: scale(1.1);
+}
+.nav.post-scroll .links .mainlink{
     color: #841800;
+    /* color: #25914E; */
+}
+.nav.pre-scroll .links .mainlink{
+    color: #fff;
+    opacity: 1;
+
+    /* background-color: #25914E;
+    border-radius: 10%;
+    padding: 6px 6px 6px 6px; */
+    
+    
 }
 
 .nav h4{
@@ -83,12 +149,24 @@ html,body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10vw 0 10vw;
+    padding: 3vw 10vw 0 5vw;
     height: 80vh;
     overflow-y: hidden;
 }
-
+.landingText{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.landingText .logo-img{
+    width: 60vw;
+    height: auto;
+    padding-left: 0;
+    
+    /* margin-right: -40px; */
+}
 .landingText h1{
+    padding-left: 5vw;
     font-size: 6vw;
     margin: 0 !important;
     color: #FFF;
@@ -98,14 +176,14 @@ html,body{
     font-size: 4vw;
 }
 .landingText h3{
+    padding-left: 5vw;
     margin: 6px !important;
     font-size: 20px;
     opacity: 0.8;
     line-height: 30px;
     color: #fff;
 }
-
-.landingText .btn{
+.landingText a.btn{
     width: 120px;
     margin-top: 30px;
     padding: 14px 20px 14px 20px;
@@ -116,23 +194,31 @@ html,body{
     border: solid 1px #fff;
     border: none;
     transition: all .2s ease-in-out;
-    opacity: 0.8;
+    opacity: 0.9;
 }
-.landingText .btn:hover{
+.landingText a.btn:hover{
     transform: scale(1.1);
     opacity: 1;
     font-weight: 400;
 }
-.landingText a .btn{
+.landingText a.btn{
     /* text-transform:uppercase; */
     /* font-family: 'Roboto'; */
     font-weight: 300;
     font-size: 20px;
-    color: #FFF
+    color: #FFF;
+    margin-left: 5vw;
 }
 
 .landingImage img{
-    width: 28vw;
+    height: 20vw;
+    max-height: 20%;
+    opacity: 0.7;
+    transition: all ease-in-out 0.2s;
+}
+.landingImage img:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
 }
 
 /* About Section */
@@ -173,7 +259,6 @@ html,body{
 .aboutList ol{
     list-style: none;
     color: #00270F;
-    margin: ;
 }
 
 .aboutList ol li{
@@ -251,8 +336,19 @@ html,body{
 .infoCards .one .cardOneImg{
     width: 180px;
     position: absolute;
-    top:-50px;
-    right: -50px;
+    top:-40px;
+    right: -20px;
+    border-radius: 50%;
+    height: 18vh;
+    width: auto;
+    z-index: 10;
+    border: solid 4px #000;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.09);
+    transition: all ease-in-out 0.2s;
+    /* border: solid 4px #ededed; */
+}
+.infoCards .one .cardOneImg:hover{
+    transform: scale(1.3);
 }
 /* .infoCards .two .cardTwoImg{
     width: 158px;
@@ -363,7 +459,6 @@ html,body{
     justify-content: right;
     align-items: right;
     transition: all ease-in-out 0.2s;
-
 }
 /* .cardBtn:hover{
     background-color: #25914E;
@@ -422,25 +517,6 @@ html,body{
     justify-content: flex-start;
 }
 
-/* Footer */
-.footer{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    background-color: #25914E;
-}
-
-.footerLinks a{
-    margin: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-}
-.footerLinks .mainlink{
-    color: #841700;
-}
 
 /* RESPONSIVENESS */
 
@@ -449,11 +525,20 @@ html,body{
     .nav{
         flex-direction: column;
         justify-content: space-around;
-        padding: 20px;
+        padding: 12px;
         height: auto;
         overflow-y: hidden;
         align-items: center;
         text-align: center;
+    }
+    .nav .logo span{
+        font-family: 'EB Garamond';
+        font-size: 4.5vh;
+        font-weight: 300;
+    }
+    .nav .logo img{
+        width: 80%;
+        height: auto;
     }
     .nav h4{
         font-size: 6vw;;
@@ -461,19 +546,32 @@ html,body{
         margin-bottom: 14px;
 
     }
+    .nav .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* background-color: blue; */
+        width: 100%;
+    }
     .nav .links a{
-        margin-right: 25px;
+        font-size: 12px;
+        /* margin-right: 25px;
         font-size: 12px;
         font-weight: 600;
-        display: inline-block;
+        display: inline-block; */
     }
     /* LANDING */
     .landing{
         flex-direction: column-reverse;
-        height: 750px;
+        height: 90vh;
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .landingText .logo-img{
+        width: 100%;
+        margin: 0;
+        padding:0;
     }
     .landingText h1{
         font-size: 6vw;
@@ -482,14 +580,14 @@ html,body{
     .landingText h3{
         font-size: 4vw;
     }
-    .landingText .btn{
-        margin: 0 auto;
-    }
-    .landingText .btn a{
+    .landingText a.btn{
         font-size: 4vw;
+        margin: 0 auto;
+        margin-top: 10%;
     }
     .landingImage img{
-        width: 52vw;
+        width: 10vh;
+        height: auto;
         margin-bottom: 20px;
     }
 
@@ -497,6 +595,7 @@ html,body{
     .about{
         height: auto;
         padding: 0px;
+        padding-top: 2%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -554,6 +653,9 @@ html,body{
         margin-bottom: 15%;
         margin-top: 15%;
     }
+    .infoCards .one .cardOneImg{
+        top:-25px;
+    }
     .social-icons li .cardBtn{
         font-size: 4vw;
     }
@@ -587,8 +689,4 @@ html,body{
         justify-content: space-around;
     }
 
-    /* Footer */
-    .footer{
-        padding-bottom: 40px;
-    }
 }

@@ -1,12 +1,13 @@
 import React,  { Component } from "react";
 import PrimaryLayout from '../layouts/PrimaryLayout';
-import SkillsChart from '../components/SkillsChart'
-import { Link, navigate, withPrefix } from 'gatsby';
+// import SkillsChart from '../components/SkillsChart'
+// import { Link, navigate, withPrefix } from 'gatsby';
 
 class About extends Component {
   
   render(){
-    const { data } = this.props;
+
+    // const { data } = this.props;
     
     return(
       <PrimaryLayout>
