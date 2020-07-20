@@ -1,0 +1,180 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/component---cache-caches-gatsby-plugin-offline-app-shell-js-c9875e2473a7c518755f.js
+  Cache-Control: public, max-age=31536000, immutable
+/styles.22ad9b064e36f6760fa7.css
+  Cache-Control: public, max-age=31536000, immutable
+/styles-89fd2ae28bdf06750a71.js
+  Cache-Control: public, max-age=31536000, immutable
+/cb1608f2-e1d6d31f1b4a44e30899.js
+  Cache-Control: public, max-age=31536000, immutable
+/a9a7754c-54fb9e9eeb4aa0d5569c.js
+  Cache-Control: public, max-age=31536000, immutable
+/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js
+  Cache-Control: public, max-age=31536000, immutable
+/de5df19d8eba36e00424b83355890b246298da86-e9489acd90c552ad72a5.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-1-js-3e0d7ba90efe4bc33828.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-2-js-ff9c1b883179e4f86cc4.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-e5ecf16deba33858df28.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-about-js-fbd299b7943877cd173e.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-blog-js-3cfaedc35ece0f48d6b8.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-js-19aa496a59817594abc6.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-f5abf80c471db49e293d.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-projects-js-fddb408ff042c52e37be.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-services-js-e9dd2b000268d61d6cdc.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-785e1ddfb1e8245c6b0d.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-88141e8bb2fa5a1effff.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-a262e25354e14a1cb4a6.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/carvalhosiqueira.com.br/offline-plugin-app-shell-fallback/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---cache-caches-gatsby-plugin-offline-app-shell-js-c9875e2473a7c518755f.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/1/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/de5df19d8eba36e00424b83355890b246298da86-e9489acd90c552ad72a5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-1-js-3e0d7ba90efe4bc33828.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/1/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/2/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/de5df19d8eba36e00424b83355890b246298da86-e9489acd90c552ad72a5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-2-js-ff9c1b883179e4f86cc4.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/2/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/404/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-404-js-e5ecf16deba33858df28.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/about/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-about-js-fbd299b7943877cd173e.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/blog/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-blog-js-3cfaedc35ece0f48d6b8.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/blog/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/contact/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-contact-js-19aa496a59817594abc6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/contact/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/de5df19d8eba36e00424b83355890b246298da86-e9489acd90c552ad72a5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-index-js-f5abf80c471db49e293d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/projects/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-projects-js-fddb408ff042c52e37be.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/projects/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/services/
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-services-js-e9dd2b000268d61d6cdc.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/services/page-data.json>; rel=preload; as=fetch; crossorigin
+/carvalhosiqueira.com.br/404.html
+  Link: </carvalhosiqueira.com.br/webpack-runtime-785e1ddfb1e8245c6b0d.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/framework-88141e8bb2fa5a1effff.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/app-a262e25354e14a1cb4a6.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/cb1608f2-e1d6d31f1b4a44e30899.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/a9a7754c-54fb9e9eeb4aa0d5569c.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/ade7bbae7ef21205ce300c0b8588cc96f7ed51dd-a627989d548a598968b5.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/component---src-pages-404-js-e5ecf16deba33858df28.js>; rel=preload; as=script
+  Link: </carvalhosiqueira.com.br/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </carvalhosiqueira.com.br/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{"16l3":function(e,n,t){"use strict";t.r(n);var a=t("dI71"),r=t("q1tI"),o=t.n(r),u=t("NmTa"),c=function(e){function n(){return e.apply(this,arguments)||this}return Object(a.a)(n,e),n.prototype.render=function(){return o.a.createElement(u.a,null,o.a.createElement("h1",null,"Casos"),o.a.createElement("div",null,"Awesome cases page!"))},n}(r.Component);n.default=c}}]);
+//# sourceMappingURL=component---src-pages-projects-js-34971b2d98bf9bd5890c.js.map
