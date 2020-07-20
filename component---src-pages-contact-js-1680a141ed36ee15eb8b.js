@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{"Cuy+":function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var r=e("dI71"),a=e("q1tI"),o=e.n(a),u=e("NmTa"),c=function(n){function t(){return n.apply(this,arguments)||this}return Object(r.a)(t,n),t.prototype.render=function(){return o.a.createElement(u.a,null,o.a.createElement("h1",null,"Contact"),o.a.createElement("div",null,"Awesome contact"))},t}(a.Component)}}]);
-//# sourceMappingURL=component---src-pages-contact-js-1680a141ed36ee15eb8b.js.map
