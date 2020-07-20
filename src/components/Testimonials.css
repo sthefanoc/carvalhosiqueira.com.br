@@ -1,6 +1,6 @@
 .testimonials-section {
     width: 100%;
-    background-image: url('/images/header.webp');
+    background-image: url('/images/header.png');
     /* display: flex; */
     flex-direction: column;
     display: flex;
@@ -91,12 +91,14 @@
     /* margin-bottom: 0; */
     align-self: flex-end;
     padding-bottom: 3%;
+    /* padding-left: 10%; */
+    /* margin-left: 30%; */
     /* height: 20%; */
     /* margin-right: 10%; */
     /* position: absolute; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: flex-end; */
     /* align-self: right; */
     /* align-items: left; */
     /* position: absolute; */
@@ -145,8 +147,10 @@
     /* position: absolute; */
     font-size: 80%;
     align-items: flex-end;
-    padding: 0;
-    margin: 0;
+    /* padding: 0; */
+    /* margin: 0; */
+    padding-top: 8%;
+    padding-left: 5%;
     bottom: 10%;
 }
 .testimonials-section .control-buttons svg{
