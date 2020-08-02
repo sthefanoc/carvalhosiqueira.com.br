@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import PrimaryLayout from '../layouts/PrimaryLayout';
-import Testimonials from '../components/Testimonials';
+import PrimaryLayout from '../src/layouts/PrimaryLayout';
+import Testimonials from '../src/components/Testimonials';
 import { withPrefix } from "gatsby";
 import AOS from 'aos';
 import 'aos/dist/aos.css';

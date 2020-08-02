@@ -8,7 +8,11 @@ class Page404 extends Component {
   render() {
   return (
     <PrimaryLayout>
-      <div>Ops! Não achei essa.</div>
+      <section className="page404">
+        <h1>Página não encontrada</h1>
+        <div>Não encontramos a página que você procura. Utilize os links acima para voltar ao site os a informação abaixo para entrar em contato conosco.</div>
+        <a href="/">Página Inicial</a>
+      </section>
     </PrimaryLayout>
 )}
 };
