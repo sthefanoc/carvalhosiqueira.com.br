@@ -19,9 +19,6 @@
     color: #006024;
     color: #004419;
     color: #00270F;
-
-    color: #300084;
-    color: #548400;
 }
 
 /* Import font */
@@ -32,8 +29,7 @@
 
 html,body{
     background-color: #fff;
-    /* font-family: 'EB Garamond'; */
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: 'EB Garamond';
     overflow-x: hidden !important;
     margin: 0px !important;
     padding: 0px !important;
@@ -154,18 +150,13 @@ header .post-scroll.active{
     justify-content: space-between;
     align-items: center;
     padding: 3vw 10vw 0 5vw;
-    height: 50vh;
+    height: 80vh;
     overflow-y: hidden;
 }
 .landingText{
     display: flex;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    align-items: center;
-}
-.landingText #landing{
-    
 }
 .landingText .logo-img{
     width: 60vw;
@@ -185,7 +176,7 @@ header .post-scroll.active{
     font-size: 4vw;
 }
 .landingText h3{
-    padding-left: 0;
+    padding-left: 5vw;
     margin: 6px !important;
     font-size: 20px;
     opacity: 0.8;
@@ -298,14 +289,15 @@ header .post-scroll.active{
 }
 
 .infoHeader{
-    /* text-align: center; */
+    text-align: center;
     margin-bottom: 5%;
-    padding-left: 50px;
 }
 .infoHeader h2{
-    font-size: 40px;
-    color: #841800;
-    font-weight: 600;
+    font-size: 50px;
+}
+.infoHeader span{
+    color: #C84D33;
+    font-size: 35px;
 }
 .infoCards{
     display: flex;
@@ -491,13 +483,13 @@ header .post-scroll.active{
     align-items: center;
 }
 .bannerText h2{
-    font-size: 40px;
-    color: #841800;
+    font-size: 50px;
+    color: #000;
     font-weight: 600;
 }
-.bannerText p span{
-    font-weight: 600;
-    font-size: inherit;
+.bannerText span{
+    color: #C84D33;
+    font-size: 35px;
 }
 .bannerText p{
     font-size: 20px;
@@ -592,7 +584,7 @@ header .post-scroll.active{
     /* LANDING */
     .landing{
         flex-direction: column-reverse;
-        height: 70vh;
+        height: 90vh;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -663,7 +655,6 @@ header .post-scroll.active{
     .infoHeader{
         text-align: center;
         margin: 40px 0;
-        padding-left: 0px;
     }
     .infoHeader h2{
         font-size: 7vw;

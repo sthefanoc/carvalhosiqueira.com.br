@@ -27,33 +27,17 @@ export default class Home extends Component {
             {/* <h1>Carvalho Siqueira <br /><span>advogadas e advogados</span></h1> */}
             <a href="#landing"><img className='logo-img' src={withPrefix('/images/logo_carvalhosiqueira_vermelho.webp')} alt="Carvalho Siqueira | Advogadas e advogados"/></a>
             <h3>Apoio jurídico estruturado a organizações, movimentos sociais e ativistas.</h3>
-            {/* <a href="#escritorio" className="btn">Conheça</a> */}
+            <a href="#escritorio" className="btn">Conheça</a>
           </div>
           <div className="landingImage" data-aos="fade-up" data-aos-duration="2000">
-            {/* <img src={withPrefix('/images/black-fist.png')} alt="landing page"/> */}
+          <img src={withPrefix('/images/black-fist.png')} alt="landing page"/>
             {/* <img src={withPrefix('/images/white-fist.png')} alt="background image"/> */}
             {/* <img src={withPrefix('/images/signs.svg')} alt="background image"/> */}
           </div>
         </section>
 
-        <section className="banner" id="escritorio" data-aos="fade-right" data-aos-duration="1000">
-          <div className="bannerText">
-            <h2>O Escritório</h2>
-            <p><span>Carvalho Siqueira Advogadas e Advogados</span> surge com a proposta de consolidar a experiência de seus sócios, adquiridas a partir da atuação com organizações da sociedade civil, para oferecer apoio jurídico estruturado a organizações, movimentos sociais e ativistas. <br /><br />
-            Nosso foco é o integral atendimento da necessidade dos clientes em projetos e campanhas que envolvam incidência estratégica em políticas públicas, análise de riscos, proteção legal e litígio estratégico no sistema de justiça brasileiro e sistemas internacionais de proteção dos direitos humanos (OEA e ONU).
-            </p>
-            {/* <div className="banner-images">
-              <a data-aos="fade-right" data-aos-duration="1200" href="https://www.oas.org/pt/" target="blank" rel="noopenner noreferrer"  aria-label="oea"><img src={withPrefix('/images/oea.gif')} alt=""/></a>
-              <a data-aos="fade-left" data-aos-duration="1400" href="https://nacoesunidas.org/" target="blank" rel="noopenner noreferrer"  aria-label="onu"><img src={withPrefix('/images/onu.png')} alt=""/></a>  
-            </div> */}
-          </div>
-          {/* <div className="bannerImg" data-aos="fade-up" data-aos-duration="1000">
-            <img src={withPrefix('/images/hands.webp')} alt=""/>
-          </div> */}
-        </section>
-
         {/* About section */}
-        {/* <section className="about" id="missao">
+        <section className="about" id="missao">
           <div className="aboutText" data-aos="fade-up" data-aos-duration="1000">
             <h2>Nossa Missão.<br /><span>Nossos Valores.</span></h2>
             <img src={withPrefix('/images/justice.png')} alt=""/>
@@ -78,12 +62,12 @@ export default class Home extends Component {
               </li>
             </ol>
           </div>
-        </section> */}
+        </section>
 
         {/* Info section */}
         <section className="infoSection" id="sobre-nos">
           <div className="infoHeader" data-aos="fade-up" data-aos-duration="1000">
-            <h2>Os Sócios</h2>
+            <h2>Quem somos, o que fazemos.<br /> <span>E por que fazemos.</span></h2>
           </div>
           <div className="infoCards">
             {/* Card start */}
@@ -102,7 +86,7 @@ export default class Home extends Component {
                 <li data-aos="fade-left" data-aos-duration="1200"><a href="https://www.linkedin.com/" target="blank" rel="noopenner noreferrer" aria-label="linkedin"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
                 <li data-aos="fade-left" data-aos-duration="1100"><a href="https://twitter.com/" target="blank" rel="noopenner noreferrer" aria-label="twitter"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
                 <li data-aos="fade-left" data-aos-duration="1000"><a href="https://www.instagram.com/" target="blank" rel="noopenner noreferrer" aria-label="instagram"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
-                {/* <li data-aos="fade-up" data-aos-duration="1400"><a href="https://api.whatsapp.com/send?phone=5511976453163" target="blank" rel="noopenner noreferrer" aria-label="whatsapp"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li> */}
+                <li data-aos="fade-up" data-aos-duration="1400"><a href="https://api.whatsapp.com/send?phone=5511976453163" target="blank" rel="noopenner noreferrer" aria-label="whatsapp"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li>
               </ul>
             </div>
             {/* Card end */}
@@ -122,17 +106,31 @@ export default class Home extends Component {
                 <li data-aos="fade-left" data-aos-duration="1200"><a href="https://www.linkedin.com/" target="blank" rel="noopenner noreferrer" aria-label="linkedin"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
                 <li data-aos="fade-left" data-aos-duration="1100"><a href="https://twitter.com/" target="blank" rel="noopenner noreferrer" aria-label="twitter"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
                 <li data-aos="fade-left" data-aos-duration="1000"><a href="https://www.instagram.com/" target="blank" rel="noopenner noreferrer" aria-label="instagram"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
-                {/* <li data-aos="fade-up" data-aos-duration="1400"><a href="https://api.whatsapp.com/send?phone=5511955002906" target="blank" rel="noopenner noreferrer" aria-label="whatsapp"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li> */}
+                <li data-aos="fade-up" data-aos-duration="1400"><a href="https://api.whatsapp.com/send?phone=5511955002906" target="blank" rel="noopenner noreferrer" aria-label="whatsapp"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li>
               </ul>
             </div>
           </div>
         </section>
 
-        {/* <Testimonials /> */}
+        <Testimonials />
         {/* <DottedBox /> */}
         
         {/* Banner */}
-        
+        <section className="banner" id="escritorio" data-aos="fade-right" data-aos-duration="1000">
+          <div className="bannerText">
+            <h2>Nosso Escritório.<br /> <span className="bannerInnerText">Nossa atuação.</span> </h2>
+            <p>Carvalho Siqueira Advogadas e Advogados surge com a proposta de consolidar a experiência de seus sócios, adquiridas a partir da atuação com organizações da sociedade civil, para oferecer apoio jurídico estruturado a organizações, movimentos sociais e ativistas. <br /><br />
+            Nosso foco é o integral atendimento da necessidade dos clientes em projetos e campanhas que envolvam incidência estratégica em políticas públicas, análise de riscos, proteção legal e litígio estratégico no sistema de justiça brasileiro e sistemas internacionais de proteção dos direitos humanos (OEA e ONU).
+            </p>
+            <div className="banner-images">
+              <a data-aos="fade-right" data-aos-duration="1200" href="https://www.oas.org/pt/" target="blank" rel="noopenner noreferrer"  aria-label="oea"><img src={withPrefix('/images/oea.gif')} alt=""/></a>
+              <a data-aos="fade-left" data-aos-duration="1400" href="https://nacoesunidas.org/" target="blank" rel="noopenner noreferrer"  aria-label="onu"><img src={withPrefix('/images/onu.png')} alt=""/></a>  
+            </div>
+          </div>
+          <div className="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+            <img src={withPrefix('/images/hands.webp')} alt=""/>
+          </div>
+        </section>
       </div>
     </PrimaryLayout>
   )

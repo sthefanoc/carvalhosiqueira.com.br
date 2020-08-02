@@ -104,8 +104,6 @@
     /* position: absolute; */
     color: #fff;
     /* background-color: blue; */
-    z-index: 1000;
-    
 }
 .testimonials-section .control-buttons .testimonial-buttons{
     display: flex;
@@ -152,6 +150,7 @@
     padding-top: 8%;
     padding-left: 5%;
     bottom: 10%;
+    z-index: 1000;
 }
 .testimonials-section .control-buttons svg{
     margin-left: 10px;

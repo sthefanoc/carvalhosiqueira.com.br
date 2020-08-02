@@ -27,12 +27,13 @@ class Header extends React.Component {
       <div className="nav post-scroll">
         <div className="logo">
           {/* <h4><span>| </span>CARVALHO SIQUEIRA</h4> */}
-          <a href="#landing"><img src={withPrefix('/images/logo-white.png')} alt=""/></a>
+          <a href="/"><img src={withPrefix('/images/logo-white.png')} alt=""/></a>
         </div>
         <div className="links">
-          <a href="#missao">Missão</a>
-          <a href="#sobre-nos">Nós</a>
-          <a href="#testemunhos">Testemunhos</a>
+          {/* <a href="#missao">Missão</a> */}
+          <a href="#escritorio">O escritório</a>
+          <a href="#sobre-nos">Sócios</a>
+          {/* <a href="#testemunhos">Testemunhos</a> */}
           <a href="#contato" className="mainlink">Contato</a>
         </div>
       </div>
@@ -41,9 +42,10 @@ class Header extends React.Component {
           <h4><span>| </span>CARVALHO SIQUEIRA</h4>
         </div> */}
         <div className="links">
-          <a href="#missao">Missão</a>
-          <a href="#sobre-nos">Nós</a>
-          <a href="#testemunhos">Testemunhos</a>
+          {/* <a href="#missao">Missão</a> */}
+          <a href="#escritorio">O escritório</a>
+          <a href="#sobre-nos">Sócios</a>
+          {/* <a href="#testemunhos">Testemunhos</a> */}
           <a href="#contato" className="mainlink">Contato</a>
         </div>
       </div>
