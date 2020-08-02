@@ -98,10 +98,10 @@ export default class Home extends Component {
               </div>
               <ul className="social-icons">
                 <li data-aos="fade-left" data-aos-duration="1400"><a href="mailto:sheila@carvalhosiqueira.com.br" target="blank" rel="noopenner noreferrer" aria-label="email"><FontAwesomeIcon className="cardBtn" icon={faEnvelope} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1300"><a href="https://www.facebook.com/" target="blank" rel="noopenner noreferrer" aria-label="facebook"><FontAwesomeIcon className="cardBtn" icon={faFacebook} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1200"><a href="https://www.linkedin.com/" target="blank" rel="noopenner noreferrer" aria-label="linkedin"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1100"><a href="https://twitter.com/" target="blank" rel="noopenner noreferrer" aria-label="twitter"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1000"><a href="https://www.instagram.com/" target="blank" rel="noopenner noreferrer" aria-label="instagram"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1300"><a href="https://www.facebook.com/shecarvalho" target="blank" rel="noopenner noreferrer" aria-label="facebook"><FontAwesomeIcon className="cardBtn" icon={faFacebook} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1200"><a href="https://www.linkedin.com/in/shecarvalho/" target="blank" rel="noopenner noreferrer" aria-label="linkedin"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1100"><a href="https://twitter.com/she_carvalho" target="blank" rel="noopenner noreferrer" aria-label="twitter"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1000"><a href="https://www.instagram.com/she_carvalho/" target="blank" rel="noopenner noreferrer" aria-label="instagram"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
                 {/* <li data-aos="fade-up" data-aos-duration="1400"><a href="https://api.whatsapp.com/send?phone=5511976453163" target="blank" rel="noopenner noreferrer" aria-label="whatsapp"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li> */}
               </ul>
             </div>
@@ -118,10 +118,10 @@ export default class Home extends Component {
               </div>
               <ul className="social-icons">
                 <li data-aos="fade-left" data-aos-duration="1400"><a href="mailto:flavio@carvalhosiqueira.com.br" target="blank" rel="noopenner noreferrer" aria-label="email"><FontAwesomeIcon className="cardBtn" icon={faEnvelope} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1300"><a href="https://www.facebook.com/" target="blank" rel="noopenner noreferrer" aria-label="facebook"><FontAwesomeIcon className="cardBtn" icon={faFacebook} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1200"><a href="https://www.linkedin.com/" target="blank" rel="noopenner noreferrer" aria-label="linkedin"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1100"><a href="https://twitter.com/" target="blank" rel="noopenner noreferrer" aria-label="twitter"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
-                <li data-aos="fade-left" data-aos-duration="1000"><a href="https://www.instagram.com/" target="blank" rel="noopenner noreferrer" aria-label="instagram"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1300"><a href="https://www.facebook.com/flasiqueiraa" target="blank" rel="noopenner noreferrer" aria-label="facebook"><FontAwesomeIcon className="cardBtn" icon={faFacebook} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1200"><a href="https://www.linkedin.com/in/flavio-siqueira-9ab820123/" target="blank" rel="noopenner noreferrer" aria-label="linkedin"><FontAwesomeIcon className="cardBtn" icon={faLinkedin} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1100"><a href="https://twitter.com/FlavSiq" target="blank" rel="noopenner noreferrer" aria-label="twitter"><FontAwesomeIcon className="cardBtn" icon={faTwitter} /></a></li>
+                <li data-aos="fade-left" data-aos-duration="1000"><a href="https://www.instagram.com/flasiq_eira/" target="blank" rel="noopenner noreferrer" aria-label="instagram"><FontAwesomeIcon className="cardBtn" icon={faInstagram} /></a></li>
                 {/* <li data-aos="fade-up" data-aos-duration="1400"><a href="https://api.whatsapp.com/send?phone=5511955002906" target="blank" rel="noopenner noreferrer" aria-label="whatsapp"><FontAwesomeIcon className="cardBtn" icon={faWhatsapp} /></a></li> */}
               </ul>
             </div>

@@ -104,6 +104,7 @@ header .post-scroll.active{
     font-size: 16px;
     font-weight: 600;
     color: #000;
+    white-space: nowrap;
 }
 .nav.pre-scroll .links{
     /* background-color: blue; */
@@ -154,7 +155,7 @@ header .post-scroll.active{
     justify-content: space-between;
     align-items: center;
     padding: 3vw 10vw 0 5vw;
-    height: 50vh;
+    height: 70vh;
     overflow-y: hidden;
 }
 .landingText{
@@ -346,8 +347,8 @@ header .post-scroll.active{
     top:-40px;
     right: -20px;
     border-radius: 50%;
-    height: 13vw;
-    
+    height: 15vw;
+    max-height: 20vh;
     width: auto;
     /* max-width: 25%; */
     z-index: 10;
@@ -545,7 +546,8 @@ header .post-scroll.active{
         right: 50px;
     }
     .infoCards .one .cardOneImg{
-        height: 14vh;
+        height: 13vh;
+        max-height: 13vw;
     }
 }
 
@@ -685,6 +687,7 @@ header .post-scroll.active{
     }
     .infoCards .one .cardOneImg{
         height: 19vh;
+        max-height: 27vw;
         top:-25px;
     }
     .social-icons li .cardBtn{
