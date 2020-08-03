@@ -56,13 +56,13 @@ class Footer extends Component {
                 <div className="name"><h5>Sheila de Carvalho</h5></div>
                 {/* <FontAwesomeIcon className="footerBtn" icon={faWhatsapp} /><a className="phone contacts-text" href="https://api.whatsapp.com/send?phone=5511976453163" target="blank" rel="noopenner noreferrer">+55 11 97645 3163</a><br /> */}
                 <FontAwesomeIcon className="footerBtn" icon={faEnvelope} /><a className="email contacts-text" href="mailto:sheila@carvalhosiqueira.com.br">sheila@carvalhosiqueira.com.br</a><br />
-                <FontAwesomeIcon className="footerBtn" icon={faMobileAlt} /><a className="social-media contacts-text" href="#redes-sociais-01">Redes sociais</a><br />
+                <FontAwesomeIcon className="footerBtn" icon={faMobileAlt} /><a className="social-media contacts-text" href="/#redes-sociais-01">Redes sociais</a><br />
               </div>
               <div className="contact-02" data-aos="fade-left" data-aos-duration="1600">
                 <div className="name"><h5>Flávio Siqueira</h5></div>
                 {/* <FontAwesomeIcon className="footerBtn" icon={faWhatsapp} /><a className="phone contacts-text" href="https://api.whatsapp.com/send?phone=5511955002906" target="blank" rel="noopenner noreferrer">+55 11 97645 3163</a><br /> */}
                 <FontAwesomeIcon className="footerBtn" icon={faEnvelope} /><a className="email contacts-text" href="mailto:flavio@carvalhosiqueira.com.br">flavio@carvalhosiqueira.com.br</a><br />
-                <FontAwesomeIcon className="footerBtn" icon={faMobileAlt} /><a className="social-media contacts-text" href="#redes-sociais-02">Redes sociais</a><br />
+                <FontAwesomeIcon className="footerBtn" icon={faMobileAlt} /><a className="social-media contacts-text" href="/#redes-sociais-02">Redes sociais</a><br />
               </div>
             </div>
           </div>

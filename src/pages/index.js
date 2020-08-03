@@ -12,6 +12,7 @@ export default class Home extends Component {
   componentDidMount(){
     console.log('This is the Home page');
     AOS.init();  
+    console.log('a')
   }
   render() {
   return (

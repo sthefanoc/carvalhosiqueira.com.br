@@ -348,7 +348,7 @@ header .post-scroll.active{
     right: -20px;
     border-radius: 50%;
     height: 15vw;
-    max-height: 20vh;
+    max-height: 18vh;
     width: auto;
     /* max-width: 25%; */
     z-index: 10;
