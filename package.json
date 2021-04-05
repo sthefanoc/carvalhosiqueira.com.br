@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "carvalhosiqueira.com.br",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Gatsby website para CarvalhoSiqueira.com.br",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
